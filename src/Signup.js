@@ -53,8 +53,11 @@ export default function Signup() {
     <div className="signup-container">
       <div className="signup-card">
         <div className="signup-header">
-          <h1 className="signup-title">Medical Dashboard</h1>
-          <p className="signup-subtitle">Create your account</p>
+          <div className="header-top">
+            <img src="/assets/logo.png" alt="MediSense Logo" className="login-logo" />
+            <a href="/" className="home-link">Home</a>
+          </div>
+          <p className="login-subtitle">Signup to continue</p>
         </div>
 
         <div className="signup-form">

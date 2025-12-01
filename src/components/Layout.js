@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "../home.css";
+import "./Layout.css";
 
 function Layout() {
 
@@ -24,9 +25,9 @@ function Layout() {
                 <div className="container d-flex align-items-center justify-content-between py-3">
                     <a href="/" className="brand d-flex align-items-center gap-2">
                         <img
-                            src="/assets/logo.svg"
+                            src="/assets/logo.png"
                             alt="Medisense logo"
-                            width="140"
+                            width="120"
                             height="40"
                         />
                     </a>
@@ -95,12 +96,18 @@ function Layout() {
             </main>
 
             {/* Footer */}
-            <footer className="site-footer mt-5 py-4">
-                <div className="container d-flex justify-content-between align-items-center">
-                    <div>© Medisense {new Date().getFullYear()}</div>
-                    <div className="d-flex gap-3">
-                        <a href="#">Privacy</a>
-                        <a href="#">Terms</a>
+            <footer className="site-footer">
+                <div className="footer-content">
+                    <div className="footer-left">
+                        <p className="footer-copyright">© {new Date().getFullYear()} Medisense. All rights reserved.</p>
+                    </div>
+
+                    <div className="footer-right">
+                        <div className="footer-links">
+                            <a href="#" className="footer-link">Privacy Policy</a>
+                            <a href="#" className="footer-link">Terms of Service</a>
+                            <a href="#" className="footer-link">Contact</a>
+                        </div>
                     </div>
                 </div>
             </footer>

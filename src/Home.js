@@ -14,7 +14,7 @@ function Home() {
                         <p className="hero-desc">Real-time IoT-based health monitoring with ESP32, cloud storage, and smart dashboards for patients and clinicians</p>
                         <div className="d-flex gap-3 align-items-center mt-3">
                             <a href="Login" className="btn cta-btn btn-lg">Get Started</a>
-                            <a href="features" className="text-muted">See features</a>
+                            <a href="features" className="text-features">See features</a>
                         </div>
                         <div className="mt-4 quick-stats d-flex gap-3">
                             <div className="stat-card p-3">
@@ -33,21 +33,6 @@ function Home() {
                     </div>
                     <div className="hero-right">
                         <img className="patient-photo" src="/assets/patient.jpg" alt="patient and doctor"/>
-                        {/* <div className="feature-card">
-                            <div className="d-flex align-items-center justify-content-between">
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                    <img src="/assets/avatar-1.jpg" className="avatar" alt="Patient avatar" />
-                                    <div style={{ fontSize: '12px', color: '#334155' }}>Live Patients</div>
-                                </div>
-                                <div className="stat">89%</div>
-                            </div>
-                            <div className="stat-sub">of users improved adherence</div>
-                            <div style={{ marginTop: '10px' }}>
-                                <span className="feature-pill">Heart Rate & SpO₂</span>
-                                <span className="feature-pill">Temperature</span>
-                                <span className="feature-pill">Fall & Air Quality</span>
-                            </div>
-                        </div> */}
                     </div>
                 </section>
 
