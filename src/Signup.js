@@ -200,7 +200,7 @@ export default function Signup() {
 
           <button
             className="login-link"
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/Login')}
           >
             Already have an account? Login here
           </button>
