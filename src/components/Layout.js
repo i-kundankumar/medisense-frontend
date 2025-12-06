@@ -1,6 +1,5 @@
-import React from "react";
 import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import "../home.css";
 import "./Layout.css";
 
@@ -10,9 +9,9 @@ function Layout() {
 
     const navLinks = [
         { label: "Home", href: "/" },
-        { label: "Features", href: "features" },
-        { label: "Pricing", href: "pricing" },
-        { label: "About", href: "about" },
+        { label: "Features", href: "/features" },
+        { label: "Pricing", href: "/pricing" },
+        { label: "About", href: "/about" },
     ];
 
     const toggleMobileMenu = () => {
@@ -44,7 +43,7 @@ function Layout() {
                             </a>
                         ))}
                         <a
-                            href="contact"
+                            href="/contact"
                             className="btn btn-outline-primary btn-sm"
                         >
                             Contact
@@ -78,7 +77,7 @@ function Layout() {
                                     </a>
                                 ))}
                                 <a
-                                    href="contact"
+                                    href="/contact"
                                     className="btn btn-outline-primary btn-sm mt-2"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
@@ -104,9 +103,9 @@ function Layout() {
 
                     <div className="footer-right">
                         <div className="footer-links">
-                            <a href="#" className="footer-link">Privacy Policy</a>
-                            <a href="#" className="footer-link">Terms of Service</a>
-                            <a href="#" className="footer-link">Contact</a>
+                            <a href="/privacy" className="footer-link">Privacy Policy</a>
+                            <a href="/terms" className="footer-link">Terms of Service</a>
+                            <a href="/contact" className="footer-link">Contact</a>
                         </div>
                     </div>
                 </div>
